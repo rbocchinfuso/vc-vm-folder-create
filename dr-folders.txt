@@ -1,0 +1,12 @@
+Acct-Replica
+BusIntake-Replica
+DB-Replica
+DocMgmt-Replica
+Exchange-Replica
+FileServer1-Replica
+FileServer2-Replica
+FileServer3-Replica
+FileServer4-Replica
+General-Replica
+DR-Infra
+Templates

@@ -1,0 +1,8 @@
+[vCenter]
+vcenter=vcenter.foo.bar
+vcenteruser=domain\user
+vcenterpw=password
+datacenter=DC
+
+[Folders]
+folders=folder-file.txt
