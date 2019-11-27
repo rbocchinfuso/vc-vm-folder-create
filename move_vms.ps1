@@ -39,7 +39,7 @@ $vc = Connect-VIServer $vcenter -User $vcenteruser -Password $vcenterpw
 # Move VMs
 Import-Csv $vmFolderMap -UseCulture | %{
     $vm = Get-VM -Name $_.VmName
-    $folder = Get-FolderByPath -Name $_.FolderName
+    $folder = Get-FolderByPath -Path $_.FolderName
     Move-VM -VM $vm -Destination $folder
 }
  
