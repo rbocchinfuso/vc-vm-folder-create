@@ -1,0 +1,5 @@
+VmName,FolderName
+ACC-ADMIN_DR,DR Site/vSphere-Replica
+ACC-ADMIN-DR,DR Site/vSphere-Replica
+ACC-APP-DEV_DR,DR Site/vSphere-Replica
+ACC-APP-TEST_DR,DR Site/vSphere-Replica

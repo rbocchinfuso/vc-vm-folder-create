@@ -13,3 +13,4 @@ Misc
 Other
 DR-Infra
 Old-Veeam-Replica
+vSphere-Replica
