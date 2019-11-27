@@ -29,8 +29,8 @@ BillBlast,NY Site/General-Rep2DR
 ccfs-xs-onprem-poller,NY Site/Prod-Infra
 CIMC-SVR,NY Site/Prod-Infra
 Copitraksvr,NY Site/General-NoRep2DR
-CTX-CC1,NY Site/Decommmission
-CTX-CC2,NY Site/Decommmission
+CTX-CC1,NY Site/Decommission
+CTX-CC2,NY Site/Decommission
 CUC-PRI,NY Site/Other-NoRep2DR
 Dataserver,NY Site/FileServer1-Rep2DR
 Dataserver2,NY Site/FileServer2-Rep2DR
