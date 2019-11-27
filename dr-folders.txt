@@ -8,5 +8,8 @@ FileServer2-Replica
 FileServer3-Replica
 FileServer4-Replica
 General-Replica
-DR-Infra
 Templates
+Misc
+Other
+DR-Infra
+Old-Veeam-Replica
