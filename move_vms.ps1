@@ -27,7 +27,6 @@ $vcenteruser = $h.Get_Item("vcenteruser")
 $vcenterpw = $h.Get_Item("vcenterpw")
 $vmFolderMap = $h.Get_Item("foldermap")
 
-
 # Load PowerCLI
 # $o = Add-PSSnapin VMware.VimAutomation.Core
 # $o = Get-Module -Name VMware* -ListAvailable | Import-Module
