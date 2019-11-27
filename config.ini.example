@@ -6,3 +6,9 @@ datacenter=DC
 
 [Folders]
 folders=folder-file.txt
+
+[VM Folder Map]
+foldermap=test-vm-folder-map.csv
+
+[ESX Hosts]
+esxhosts=test-esx-hosts.txt
