@@ -42,7 +42,16 @@ $dc = Get-Datacenter -Name $datacenter
 $vmFolder = Get-View -id $dc.ExtensionData.VmFolder
 Get-Content $esxhosts | Foreach-Object{
     write-host "*** Configuring network on $_ ***"
-    # $vmFolder.CreateFolder($_)
+    # create vswitch
+    # note: vSwitch0 and vSwitch1 already exist.  vSwitch2 created as an isolated, local vSwitch.
+    New-VirtualSwitch -VMHost $_ -Name vSwitch2
+    # create port groups
+    Get-VMHost $_ | Get-VirtualSwitch -name vSwitch0 | New-VirtualPortGroup -Name WAN
+    Get-VMHost $_ | Get-VirtualSwitch -name vSwitch1 | New-VirtualPortGroup -Name DR-172.16.124.0/23
+    Get-VMHost $_ | Get-VirtualSwitch -name vSwitch1 | New-VirtualPortGroup -Name DR-Infra
+    Get-VMHost $_ | Get-VirtualSwitch -name vSwitch2 | New-VirtualPortGroup -Name BubbleNet
+    # remove VM Netork port group
+    Get-VMHost $_ | Get-VirtualPortGroup -Name "VM Network" | Remove-VirtualPortGroup -Confirm:$false
  }
  
 # Disconnect from vCenter Server

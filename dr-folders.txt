@@ -14,3 +14,4 @@ Other
 DR-Infra
 Old-Veeam-Replica
 vSphere-Replica
+Test-Replica

@@ -22,3 +22,4 @@ Misc-NoRep2DR
 RecordsMgmt-NoRep2DR
 Other-NoRep2DR
 Prod-Infra
+Test-Rep2DR
